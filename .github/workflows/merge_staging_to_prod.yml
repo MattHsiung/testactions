@@ -19,5 +19,5 @@ jobs:
           cat README.md
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git merge origin/staging --no-ff --no-edit
+          git merge origin/staging --ff-only
           git push origin
