@@ -18,4 +18,6 @@ jobs:
       - run: |
           cat README.md
           git merge origin/staging --no-ff --no-edit
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git push main
