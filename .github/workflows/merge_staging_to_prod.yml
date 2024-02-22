@@ -17,5 +17,5 @@ jobs:
           fetch-depth: 0
       - run: |
           cat README.md
-          git merge staging --no-ff --no-edit
+          git merge origin/staging --no-ff --no-edit
           git push main
