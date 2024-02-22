@@ -1,4 +1,4 @@
-name: Merge Staging to Master
+name: Merge Staging to Main
 
 on:
   push:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Merge staging into master
+      - name: Merge staging into Main
         run: |
-          git checkout master
+          git checkout main
           git merge staging --no-ff --no-edit
-          git push origin master
+          git push origin main
