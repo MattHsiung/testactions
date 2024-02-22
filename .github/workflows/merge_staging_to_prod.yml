@@ -12,10 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Merge staging into Main
         with:
           ref: main
-        run: |
+      - run: |
           git merge origin/staging --no-ff --no-edit
           git push origin
